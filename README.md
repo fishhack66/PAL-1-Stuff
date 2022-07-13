@@ -4,7 +4,7 @@ Code (mainly BASIC, but eventually some ML) for the PAL-1, microKIM, and KIM-1 6
 
 GAMES
 
-Hammurabi for Tiny BASIC (ported and tweaked by W4JBM)
+Hammurabi for Tiny BASIC (TB ported and tweaked by W4JBM for PAL-1)
 
 Greetings!
 
