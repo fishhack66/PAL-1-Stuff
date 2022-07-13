@@ -26,7 +26,7 @@ D - dead ppl counter
 
 E - bushels of grain rats eat
 
-H - starting harvet
+H - starting harvest
 
 I - immigrants
 
