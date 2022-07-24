@@ -2,12 +2,18 @@
 
 Code (mainly BASIC, but eventually some ML) for the PAL-1, microKIM, and KIM-1 6502 computers
 
-EXAMPLES
+BOXCARS AND SNAKE EYES: an original game in Tiny BASIC: 
 
-DICE.BAS is a program that illustrates the use of RIOT chip RAM to create TinyBASIC 'limited' one-dimensional arrays using TB's USR function.  TinyBASIC has (sort of) built in 'PEEK' and 'POKE' ML routines that are not BASIC keywords -- although, to use them, you just have to call them.  For translating small dice and card games from M$ BASIC, this is just what you need!  :^)  LIST the program for an amazingly simple method of making simple 1-D arrays that can hold numbers 0-255.  Enjoy!
+Well, mainly original.  I took the idea from a high school math/programming class project.  The kids created C++ code, while I decided to just follow the "outline" present by the teacher and write this in Tiny BASIC for the KIM-1/PAL-1 (5K).  The game is a dice game - you against the computer to 100 points.  In seven turns, try to get as many points as possible without encountering "boxcars" (12) and losing your points for the turn, or "snake eyes" (2) and losing the game.  To make it fit in 2.4 KB, I just cobbled the program together 'freely,' then cut and cut and cut ... just like Hammurabi, below.  Here are some helps, in case someone wants to improve on it:
 
-GAMES
-Acey-Ducey, Chuck-a-Luck, Craps, Hi-Lo, Lunar Lander, and Hurkle have been around forever, and are all-but obvious to play. The source code for each was snagged from Creative Computing's seminal '70s texts "BASIC Computer Games," and "More BASIC Computer Games," both edited by David Ahl.  For Craps, it was a challenge (like Hammurabi) to squeeze the translation to TinyBASIC into 2.2 KB, but still fun. There were other games I wanted to translate, but four-deep nested loops were just too much for me!  Still, if you don't have an add-on RAM board for your PAL-1 or microKIM, this will provide a little fun and food for thought, if nothing else, while you reacquaint yourself with 6502 machine code and assembly language.  :^)  Enjoy!
+VARIABLES: H=Human's score, total. I=delay loop var for computer turns. J=the roll counter per turn. O=player(1) or computer(2) currently playing. P=PAL-1's total score. S=Computer's playing 'style'. T=temp var. for total point w/i a turn. X,Y=dice. Z=misc. input var.
+REMs:  100 - Main Loop  170 - Scoring.  270 - Player done, back to PAL.  300 - PAL done, back to player.  400 - a winner!  500 - Boxcars  600 - Snake Eyes  700 - Instructions (mega-chopped!)  900 - delay loop for PAL rolls.
+
+
+DICE.BAS is an example program that illustrates the use of RIOT chip RAM to create TinyBASIC 'limited' one-dimensional arrays using TB's USR function.  TinyBASIC has (sort of) built in 'PEEK' and 'POKE' ML routines that are not BASIC keywords -- although, to use them, you just have to call them.  For translating small dice and card games from M$ BASIC, this is just what you need!  :^)  LIST the program for an amazingly simple method of making simple 1-D arrays that can hold numbers 0-255.  Enjoy!
+
+OTHER GAMES
+Acey-Ducey, Chuck-a-Luck, Craps, Hi-Lo, Lunar Lander, and Hurkle have been around forever, and are all-but obvious to play. The source code for each was snagged from Creative Computing's seminal '70s texts "BASIC Computer Games," and "More BASIC Computer Games," both edited by David Ahl.  For Craps, it was a challenge (like Hammurabi) to squeeze the translation to TinyBASIC into 2.4 KB, but still fun. There were other games I wanted to translate, but four-deep nested loops were just too much for me!  Still, if you don't have an add-on RAM board for your PAL-1 or microKIM, this will provide a little fun and food for thought, if nothing else, while you reacquaint yourself with 6502 machine code and assembly language.  :^)  Enjoy!
 
 *** HAMMURABI for TinyBASIC (TB for PAL-1 ported and tweaked by W4JBM here on Github)
 
