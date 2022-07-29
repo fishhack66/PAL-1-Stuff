@@ -2,7 +2,7 @@
 
 Code (mainly BASIC, but eventually some ML) for the PAL-1, microKIM, and KIM-1 6502 computers
 
-### BOXCARS AND SNAKE EYES: an original game in Tiny BASIC: 
+### BOXCARS AND SNAKE EYES: an original game in Tiny BASIC 
 
    Well, mainly original.  I took the idea from a high school math/programming class project.  The kids created C++ code, while I decided to just follow the "outline" present by the teacher and write this in Tiny BASIC for the KIM-1/PAL-1 (5K).  The game is a dice game - you against the computer to 100 points.  In seven-or-less rolls per turn, try to get as many points as possible without encountering "boxcars" (12) and losing your points for the turn, or "snake eyes" (2) and losing the game right then and there.  To make it fit in 2.4 KB, I first cobbled the program together 'freely,' then cut and cut and cut ... just like Hammurabi, below.  Here are some helps, in case someone wants to improve on it:
 
