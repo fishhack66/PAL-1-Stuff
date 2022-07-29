@@ -4,7 +4,7 @@ Code (mainly BASIC, but eventually some ML) for the PAL-1, microKIM, and KIM-1 6
 
 ### BOXCARS AND SNAKE EYES: an original game in Tiny BASIC: 
 
-   Well, mainly original.  I took the idea from a high school math/programming class project.  The kids created C++ code, while I decided to just follow the "outline" present by the teacher and write this in Tiny BASIC for the KIM-1/PAL-1 (5K).  The game is a dice game - you against the computer to 100 points.  In seven turns, try to get as many points as possible without encountering "boxcars" (12) and losing your points for the turn, or "snake eyes" (2) and losing the game.  To make it fit in 2.4 KB, I just cobbled the program together 'freely,' then cut and cut and cut ... just like Hammurabi, below.  Here are some helps, in case someone wants to improve on it:
+   Well, mainly original.  I took the idea from a high school math/programming class project.  The kids created C++ code, while I decided to just follow the "outline" present by the teacher and write this in Tiny BASIC for the KIM-1/PAL-1 (5K).  The game is a dice game - you against the computer to 100 points.  In seven-or-less rolls per turn, try to get as many points as possible without encountering "boxcars" (12) and losing your points for the turn, or "snake eyes" (2) and losing the game right then and there.  To make it fit in 2.4 KB, I first cobbled the program together 'freely,' then cut and cut and cut ... just like Hammurabi, below.  Here are some helps, in case someone wants to improve on it:
 
    VARIABLES: H=Human's score, total. I=delay loop var for computer turns. J=the roll counter per turn. O=player(1) or computer(2) currently playing. P=PAL-1's total score. S=Computer's playing 'style'. T=temp var. for total point w/i a turn. X,Y=dice. Z=misc. input var.
 REMs:  100 - Main Loop  170 - Scoring.  270 - Player done, back to PAL.  300 - PAL done, back to player.  400 - a winner!  500 - Boxcars  600 - Snake Eyes  700 - Instructions (mega-chopped!)  900 - delay loop for PAL rolls.
@@ -28,33 +28,33 @@ REMs:  100 - Main Loop  170 - Scoring.  270 - Player done, back to PAL.  300 - P
 
 VARIABLES:
 
-A - acres
-B - RND holder for end of game
-C - land cost factor
-D - dead ppl counter
-E - bushels of grain rats eat
-H - starting harvest
-I - immigrants
-L - acres/person, end of game
-P - population
-Q - used as INPUT variable, plague chance, other misc stuff
-S - bushels stored
-U - holder for population calculations
-V - holder for dead ppl calculations
-Y - bushels of wheat harvested in a year
-Z - the year in the cycle
+A - acres  
+B - RND holder for end of game  
+C - land cost factor  
+D - dead ppl counter  
+E - bushels of grain rats eat  
+H - starting harvest  
+I - immigrants  
+L - acres/person, end of game  
+P - population  
+Q - used as INPUT variable, plague chance, other misc stuff  
+S - bushels stored  
+U - holder for population calculations  
+V - holder for dead ppl calculations  
+Y - bushels of wheat harvested in a year  
+Z - the year in the cycle  
 
 
-REMARKS (from the Ahl '78 published version, typically lines I deleted):
-418 REM *** TRYING TO USE MORE GRAIN THAN IS IN SILOS?
-444 REM *** TRYING TO PLANT MORE ACRES THAN YOU OWN?
-449 REM *** ENOUGH GRAIN FOR SEED?
-454 REM *** ENOUGH PEOPLE TO TEND THE CROPS?
-512 REM *** A BOUNTIFUL HARVEST!
-523 REM *** RATS ARE RUNNING WILD!!
-532 REM *** LET'S HAVE SOME BABIES
-539 REM *** HOW MANY PEOPLE HAD FULL TUMMIES?
-541 REM *** HORRORS, A 15% CHANCE OF PLAGUE
+REMARKS (from the Ahl '78 published version, typically lines I deleted):  
+418 REM *** TRYING TO USE MORE GRAIN THAN IS IN SILOS?  
+444 REM *** TRYING TO PLANT MORE ACRES THAN YOU OWN?  
+449 REM *** ENOUGH GRAIN FOR SEED?  
+454 REM *** ENOUGH PEOPLE TO TEND THE CROPS?  
+512 REM *** A BOUNTIFUL HARVEST!  
+523 REM *** RATS ARE RUNNING WILD!!  
+532 REM *** LET'S HAVE SOME BABIES  
+539 REM *** HOW MANY PEOPLE HAD FULL TUMMIES?  
+541 REM *** HORRORS, A 15% CHANCE OF PLAGUE  
 551 REM *** STARVE ENOUGH FOR IMPEACHMENT?
 
 
