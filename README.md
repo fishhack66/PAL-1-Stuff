@@ -18,7 +18,8 @@ REMs:  100 - Main Loop  170 - Scoring.  270 - Player done, back to PAL.  300 - P
 ### OTHER GAMES
    Acey-Ducey, Chuck-a-Luck, Craps, Hi-Lo, Lunar Lander, and Hurkle have been around forever, and are all-but obvious to play. The source code for each was snagged from Creative Computing's seminal '70s texts "BASIC Computer Games," and "More BASIC Computer Games," both edited by David Ahl.  For Craps, it was a challenge (like Hammurabi) to squeeze the translation to TinyBASIC into 2.4 KB, but still fun. There were other games I wanted to translate, but four-deep nested loops were just too much for me!  Still, if you don't have an add-on RAM board for your PAL-1 or microKIM, this will provide a little fun and food for thought, if nothing else, while you reacquaint yourself with 6502 machine code and assembly language.  :^)  Enjoy!
 
-   *** HAMMURABI for TinyBASIC (TB for PAL-1 ported and tweaked by W4JBM here on Github)
+   *** HAMMURABI for TinyBASIC [(TINYbasic for PAL-1 ported and tweaked by W4JBM here on Github)](https://github.com/w4jbm/PAL-1-6502-SBC).
+
 
    This is the "explanation" (I can't call it "documentation") of my effort to squeeze the classic BASIC game "Hamurabi" into the bit of RAM left after Tiny BASIC loads on the "stock" PAL-1 (or microKIM, or 4K-expanded actual KIM-1).  I managed to shrink it down from the 4.1KB text file found in the classic David Ahl-edited book "BASIC Computer Games" to 2.4KB.  It works - just barely - with a few bytes to spare.  I stripped this thing down to the bare bones, but it's playable.
 
