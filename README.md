@@ -5,8 +5,11 @@ Code (mainly BASIC, but eventually some ML) for the PAL-1, microKIM, and KIM-1 6
 ### LIL' YAWT: an original adaptation for Tiny BASIC
 
    I wanted to see if I could cram the popular 5-dice poker-like game into the 2.5K left over from loading Tiny BASIC into the unexpanded PAL-1 (will work with a 4K-expanded KIM-1, too).  I couldn't fit in the "poker hands," but this version has the 1 through 6 categories, "Yawt," and a final slot for the sum of one "garbage hand" that won't score anything else.
+   
    This one took some serious cutting down.  All PRINT statements are abbreviated as PR, and I stripped out 'LET' from all the variable assignments (Pitmann says it's a tad slower without the LET, but I didn't notice).  It's quite playable, and I'm pleased with it, but I'm not completely satisfied with two things: A) the Yawt test is not iron-clad; it's possible (though highly unlikely) that a false positive could happen; B) the scorecard printout is ... uneven, at the start.  Maybe someone can improve on this.  :^)  Certainly, it can be expanded if one has RAM from $2000 and up (rmember that the 'PEEK' and 'POKE' routine addresses will change in that case).
+   
    VARIABLES: B - No. of dice to reroll; category to score at end of turn.  C - Categories, start of 1-D array ($17D4).  D - Dice throws, start of array ($17CA).  F - Part of test for YAWT.  I - 'For/Next' loop generic counter.  L - No. of rolls within a turn.  O - Loc. of TB 'POKE' routine ($0218).  P - Loc. of TB 'PEEK' routine ($0214).  Q - Holds return val. of O and P.  T - Total scored/turn.  U - No. of dice to reroll.  V - 'Value' of a turn, to be put in a category.  W - Main loop counter; Counter for end game bonus/total.  Z - Holder for randomizing dice.
+   
    REMARKS: 42 - Init variables, category array.  65 - Start of Main Loop (ends 560).  300 - Roll all 5 dice.  400 - Put score into a category.  700 - Check for YAWT.  900 - Add up for Chance.  1000 - Print out each dice roll.  1300 - Print out scorecard.  1500 - Total up and end.
 
 ### BOXCARS AND SNAKE EYES: an original game in Tiny BASIC 
