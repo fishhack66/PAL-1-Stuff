@@ -27,7 +27,7 @@ Z - Generic holder for PEEK and POKE.
 
 REMARKS:  
 10 - Instructions and Init.  
-50 - Start of Turn loop.
+50 - Start of Turn loop.  
 100 - Check for 'zilch'.  
 500 - Scoring.  
 800 - End.  
