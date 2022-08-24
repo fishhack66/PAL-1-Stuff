@@ -2,6 +2,40 @@
 
 Code (mainly BASIC, but eventually some ML) for the PAL-1, microKIM, and KIM-1 6502 computers
 
+### LIL' ZILCH for KIM/PAL-1 Tiny BASIC
+
+   This is a dice game. You roll 5 dice and try to collect as many 1s and 5s as you can within a 3-roll turn. If at any time you cannot get a 1 or 5, you 'zilch' and lose any points gained in the turn. You have 10 turns to reach 2,000 points. This is based on the classic 6-dice game Zilch, aka Greedy, or even "Cosmic Wimpout".  The turn limit is your "opponent," as I ran out of room to have the computer play against you.
+
+   I tore out everything but the 1s-and-5s (no 3- or 4-of-a-kind, no straights) and crunched it down to 2.4 KB, with about 30 bytes left over in an 'unexpanded' PAL-1 with 5K RAM onboard running Tiny Basic.  I'm sure it can be improved - even within its current space limitations.  But, it's quite playable and fun.  I find I win about half the time...just about right!  :^)
+
+VARIABLES:
+A - Game score.  
+B - Generic input.  
+C - Turns counter.  
+D - Dice array.  
+E - Dice flag (kept) array.  
+F - All 5 played flag.  
+I - Loop counter.  
+L - Rolls w/i turn counter.  
+M - # of dice 'kept'.  
+O - Pointer to TB 'POKE' USR routine.  
+P - Pointer to TB 'PEEK' USR routine.
+Q - Generic holder for PEEK and POKE.  
+W - Score holder w/i turn
+Y - Final turn score (added to A).
+Z - Generic holder for PEEK and POKE.  
+
+REMARKS:  
+10 - Instructions and Init.  
+50 - Start of Turn loop.
+100 - Check for 'zilch'.  
+500 - Scoring.  
+800 - End.  
+900 - Print scorecard.
+1000 - Select 'keeper' dice.  
+1111 - Check for all 5 played.  
+1125 - Score it, or re-roll the rest?
+
 ### LIL' YAWT: an original adaptation for Tiny BASIC
 
    I wanted to see if I could cram the popular 5-dice poker-like game into the 2.5K left over from loading Tiny BASIC into the unexpanded PAL-1 (will work with a 4K-expanded KIM-1, too).  I couldn't fit in the "poker hands," but this version has the 1 through 6 categories, "Yawt," and a final slot for the sum of one "garbage hand" that won't score anything else.
