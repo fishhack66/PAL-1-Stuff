@@ -31,7 +31,7 @@ REMARKS:
 100 - Check for 'zilch'.  
 500 - Scoring.  
 800 - End.  
-900 - Print scorecard.
+900 - Print scorecard.  
 1000 - Select 'keeper' dice.  
 1111 - Check for all 5 played.  
 1125 - Score it, or re-roll the rest?
