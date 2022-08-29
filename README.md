@@ -2,13 +2,13 @@
 
 Code (mainly BASIC, but eventually some ML) for the PAL-1, microKIM, and KIM-1 6502 computers.  
 
-NOTE: ---> *Some* flavors of Tiny Basic (load at $2000, etc.) will not allow you to play some of these games, as I make use of a port of Tom Pitmann's original version for the KIM-1.  Jim McClelland's port for the PAL-1 that loads to $0200 https://github.com/w4jbm/PAL-1-6502-SBC (should be fine on a microKIM, too) is "faithful" and will allow for "PEEK" and "POKE", ersatz 1-dimensional arrays, and calling ML routines.
+NOTE: ---> If your version of Tiny Basic loads other than at $0200 (e.g. at $2000, or $2100, or elsewhere), you will need to change the variables for the 'PEEK' and 'POKE' locations in some of these programs.  Tom Pitmann's original manual for the KIM-1 version of Tiny Basic says that the routines lie 20 and 24 bytes, respectively, after the beginning of the TB program.  Eg. loads at $0200, routines at 532 and 536 (decimal); or starts at $2100, 8468 and 8472.  FWIW, I use Jim McClelland's port for the PAL-1 that loads to $0200 -- https://github.com/w4jbm/PAL-1-6502-SBC -- and a higher-loading KIM version ported by Nils Andretti that loads at $2000, but the main code starts at $2100.
 
 ### LIL' ZILCH for KIM/PAL-1 Tiny BASIC
 
    This is a dice game. You roll 5 dice and try to collect as many 1s and 5s as you can within a 3-roll turn. If at any time you cannot get a 1 or 5, you 'zilch' and lose any points gained in the turn. You have 10 turns to reach 2,000 points. This is based on the classic 6-dice game Zilch, aka Greedy, or even "Cosmic Wimpout".  The turn limit is your "opponent," as I ran out of room to have the computer play against you.
 
-   I tore out everything but the 1s-and-5s (no 3- or 4-of-a-kind, no straights) and crunched it down to 2.4 KB, with about 30 bytes left over in an 'unexpanded' PAL-1 with 5K RAM onboard running Tiny Basic.  I'm sure it can be improved - even within its current space limitations.  But, it's quite playable and fun.  I find I win about half the time...just about right!  :^)
+   I tore out everything but the 1s-and-5s (no 3- or 4-of-a-kind, no straights) and crunched it down to 2.4 KB, with about 30 bytes left over in an 'unexpanded' PAL-1 with 5K user RAM onboard running Tiny Basic.  I'm sure it can be improved - even within its current space limitations.  But, it's quite playable and fun.  I find I win about half the time...just about right!  :^)
 
 VARIABLES:
 A - Game score.  
