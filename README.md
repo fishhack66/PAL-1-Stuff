@@ -2,7 +2,7 @@
 
 Code (mainly BASIC, but eventually some ML) for the PAL-1, microKIM, and KIM-1 6502 computers.  
 
-NOTE: ---> *Some* flavors of Tiny Basic (load at $2000, etc.) will not allow you to play some of these games, as I make use of a port of Tom Pitmann's original version for the KIM-1.  Jim McClelland's port for the PAL-1 that loads to $0200 https://github.com/w4jbm/PAL-1-6502-SBC (should be fine on a microKIM, too) is "faithful" and will allow for "PEEK" and "POKE", ersatz 1-dimentional arrays, and calling ML routines.
+NOTE: ---> *Some* flavors of Tiny Basic (load at $2000, etc.) will not allow you to play some of these games, as I make use of a port of Tom Pitmann's original version for the KIM-1.  Jim McClelland's port for the PAL-1 that loads to $0200 https://github.com/w4jbm/PAL-1-6502-SBC (should be fine on a microKIM, too) is "faithful" and will allow for "PEEK" and "POKE", ersatz 1-dimensional arrays, and calling ML routines.
 
 ### LIL' ZILCH for KIM/PAL-1 Tiny BASIC
 
