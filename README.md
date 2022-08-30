@@ -2,7 +2,7 @@
 
 Code (mainly BASIC, but eventually some ML) for the PAL-1, microKIM, and KIM-1 6502 computers.  
 
-NOTE: ---> If your version of Tiny Basic loads other than at $0200 (e.g. at $2000, or $2100, or elsewhere), you will need to change the variables for the 'PEEK' and 'POKE' locations in some of these programs.  Tom Pitmann's original manual for the KIM-1 version of Tiny Basic says that the routines lie 20 and 24 bytes, respectively, after the beginning of the TB program.  Eg. loads at $0200, routines at 532 and 536 (decimal); or starts at $2100, 8468 and 8472.  FWIW, I use Jim McClanahan's port for the PAL-1 that loads to $0200 -- https://github.com/w4jbm/PAL-1-6502-SBC -- and a higher-loading KIM version ported by Nils Andretti that loads at $2000, but the main code starts at $2100.
+NOTE: ---> If your version of Tiny Basic loads other than at $0200 (e.g. at $2000, or $2100, or elsewhere), you will need to change the variables for the 'PEEK' and 'POKE' locations in some of these programs.  Tom Pitmann's original manual for the KIM-1 version of Tiny Basic says that the routines lie 20 and 24 bytes, respectively, after the beginning of the TB program.  Eg., TB loads at $0200, routines are at 532 and 536 (decimal); or starts at $2100, 8468 and 8472.  FWIW, I use [Jim McClanahan's port of TB for the PAL-1](https://github.com/w4jbm/PAL-1-6502-SBC) that loads to $0200, and a higher-loading KIM version ported by Nils Andretti that loads at $2000, but the main code starts at $2100.
 
 ### LIL' ZILCH for KIM/PAL-1 Tiny BASIC
 
@@ -10,7 +10,7 @@ NOTE: ---> If your version of Tiny Basic loads other than at $0200 (e.g. at $200
 
    I tore out everything but the 1s-and-5s (no 3- or 4-of-a-kind, no straights) and crunched it down to 2.4 KB, with about 30 bytes left over in an 'unexpanded' PAL-1 with 5K user RAM onboard running Tiny Basic.  I'm sure it can be improved - even within its current space limitations.  But, it's quite playable and fun.  I find I win about half the time...just about right!  :^)
 
-VARIABLES:
+VARIABLES:  
 A - Game score.  
 B - Generic input.  
 C - Turns counter.  
@@ -21,10 +21,10 @@ I - Loop counter.
 L - Rolls w/i turn counter.  
 M - # of dice 'kept'.  
 O - Pointer to TB 'POKE' USR routine.  
-P - Pointer to TB 'PEEK' USR routine.
+P - Pointer to TB 'PEEK' USR routine.  
 Q - Generic holder for PEEK and POKE.  
-W - Score holder w/i turn
-Y - Final turn score (added to A).
+W - Score holder w/i turn  
+Y - Final turn score (added to A).  
 Z - Generic holder for PEEK and POKE.  
 
 REMARKS:  
@@ -36,7 +36,7 @@ REMARKS:
 900 - Print scorecard.  
 1000 - Select 'keeper' dice.  
 1111 - Check for all 5 played.  
-1125 - Score it, or re-roll the rest?
+1125 - Score it, or re-roll the rest?  
 
 ### LIL' YAWT: an original adaptation for Tiny BASIC
 
