@@ -2,7 +2,7 @@
 
 Code (mainly BASIC, but eventually some ML) for the PAL-1, microKIM, and KIM-1 6502 computers.  
 
-NOTE: ---> If your version of Tiny Basic loads other than at $0200 (e.g. at $2000, or $2100, or elsewhere), you will need to change the variables for the 'PEEK' and 'POKE' locations in some of these programs.  Tom Pitmann's original manual for the KIM-1 version of Tiny Basic says that the routines lie 20 and 24 bytes, respectively, after the beginning of the TB program.  Eg. loads at $0200, routines at 532 and 536 (decimal); or starts at $2100, 8468 and 8472.  FWIW, I use Jim McClelland's port for the PAL-1 that loads to $0200 -- https://github.com/w4jbm/PAL-1-6502-SBC -- and a higher-loading KIM version ported by Nils Andretti that loads at $2000, but the main code starts at $2100.
+NOTE: ---> If your version of Tiny Basic loads other than at $0200 (e.g. at $2000, or $2100, or elsewhere), you will need to change the variables for the 'PEEK' and 'POKE' locations in some of these programs.  Tom Pitmann's original manual for the KIM-1 version of Tiny Basic says that the routines lie 20 and 24 bytes, respectively, after the beginning of the TB program.  Eg. loads at $0200, routines at 532 and 536 (decimal); or starts at $2100, 8468 and 8472.  FWIW, I use Jim McClanahan's port for the PAL-1 that loads to $0200 -- https://github.com/w4jbm/PAL-1-6502-SBC -- and a higher-loading KIM version ported by Nils Andretti that loads at $2000, but the main code starts at $2100.
 
 ### LIL' ZILCH for KIM/PAL-1 Tiny BASIC
 
