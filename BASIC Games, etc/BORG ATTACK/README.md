@@ -48,7 +48,7 @@ A) Load the file "BORG_ATTACK_ML.PTP"
 
 B) Load Tiny BASIC at $0200 
 
-C) Inside TB, load "BORG_ATTACK_TB$0200.BAS" 
+C) Inside TB, load "BORG_ATTACK.BAS" 
 
 D) Type RUN
 
