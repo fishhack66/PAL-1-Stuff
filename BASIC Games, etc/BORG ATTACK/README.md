@@ -43,9 +43,9 @@ Live long and prosper, DHH
  * * *
 
 LOADING INSTRUCTIONS:
-A) Load the file "BORG_ATTACK_ML.PTP"
-B) Load Tiny BASIC at $0200
-C) Inside TB, load "BORG_ATTACK_TB$0200.BAS"
+A) Load the file "BORG_ATTACK_ML.PTP" 
+B) Load Tiny BASIC at $0200 
+C) Inside TB, load "BORG_ATTACK_TB$0200.BAS" 
 D) Type RUN
 
 I used almost every bit of RAM I could think of when making this game. The game code takes up all-but 90 bytes of the available contiguous RAM
