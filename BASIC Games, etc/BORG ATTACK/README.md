@@ -43,9 +43,13 @@ Live long and prosper, DHH
  * * *
 
 LOADING INSTRUCTIONS:
+
 A) Load the file "BORG_ATTACK_ML.PTP" 
+
 B) Load Tiny BASIC at $0200 
+
 C) Inside TB, load "BORG_ATTACK_TB$0200.BAS" 
+
 D) Type RUN
 
 I used almost every bit of RAM I could think of when making this game. The game code takes up all-but 90 bytes of the available contiguous RAM
@@ -58,36 +62,67 @@ I'm *sure* this code can be improved upon, even expanded (graphic displays, more
 in an 8 KB+ environment, so have at it!
 
 VARIABLES
+
 A - Generic input variable
+
 B - X position of Borg Cube
+
 C - Y position of Borg Cube
+
 D - Damage level of Cube (2-0)
+
 E - Energy level of pod's shields
+
 G - X position of Fed. shuttlepod
+
 H - Y position of Fed. shuttlepod
+
 I - 'For/Next' loop generic counter
+
 J - 'For/Next' loop generic counter
+
 L - No. of rolls within a turn
+
 Q - Holds return val. of USR/RND call
+
 R - Holds return val. of RND call
+
 T - Torpedoes onboard pod
+
 U - X position HOLDER of diff betw cube/pod
+
 V - Y position HOLDER of diff betw cube/pod
+
 X - X position ENTERED of Fed. shuttlepod
+
 Y - Y position ENTERED of Fed. shuttlepod
 
+
 REMARKS
+
 1 REM by Dave Hassler
+
 1 REM Built Sept. 2022 for the PAL-1 computer
+
 1 REM Runs under Tiny BASIC loaded at $0200
+
 2 REM Call PrintMsg hiding in RIOT RAM
+
 3 REM Seed RND generator
+
 19 REM Place Borg Cube at edge of quadrant
+
 99 REM Move Borg Cube 0 or -1 (X,Y) on grid
+
 199 REM Pod jump routine
+
 399 REM Complete jump and perform scan
+
 499 REM Resupply at Chandra Base
+
 799 REM Battle Stations!
+
 999 REM 'Thinking' loop
+
 1099 REM Det. Cube's positional relationship to Pod (1 sector resolution)
 
