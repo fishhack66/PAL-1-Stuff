@@ -31,7 +31,7 @@ One problem is that when you jump, the Borg Cube moves also, so you have to try 
 unless the pilot is extremely lucky with a perfect shot, it will two successful hits to disable the Cube. Unfortunately, the Cube possesses
 superior weapons...
 
-Chandra V Stace Station (at 0,0) can reload the pod's torpedoes and recharge sheilds; but, in the meantime, the Borg will have moved twice 
+Chandra V Space Station (at 0,0) can reload the pod's torpedoes and recharge sheilds; but, in the meantime, the Borg will have moved twice 
 by the next time you jump: once when you jumped to Chandra and again when you go back out.
 
 In play testing, I found I will win about half the time, and fail most often when I take risks (shades of Tom Paris!). Factors such as
