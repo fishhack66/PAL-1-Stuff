@@ -3,7 +3,7 @@
 Code (mainly BASIC, but eventually some ML) for the PAL-1, microKIM, and KIM-1 6502 computers.  
 
 ### NEW assembly/debugging utilities for the PAL-1 in the Utilities folder:
-a 6502 disassembler, a memory dumper with hex and ASCII output, plus a little register display program.  See the README.md there for details. 
+the Woz/Baum 6502 disassembler for KIM, a memory dumper with hex and ASCII output, plus a little register display program.  See the README.md there for details. 
 
 NOTE: ---> If your version of Tiny Basic loads other than at $0200 (e.g. at $2000, or $2100, or elsewhere), you will need to change the variables for the 'PEEK' and 'POKE' locations in some of these programs.  Tom Pitmann's original manual for the KIM-1 version of Tiny Basic says that the routines lie 20 and 24 bytes, respectively, after the beginning of the TB program.  Eg., TB loads at $0200, routines are at 532 and 536 (decimal); or starts at $2100, 8468 and 8472.  FWIW, I use [Jim McClanahan's port of TB for the PAL-1](https://github.com/w4jbm/PAL-1-6502-SBC) that loads to $0200, and a higher-loading KIM version ported by Nils Andretti that loads at $2000, but the main code starts at $2100.
 
@@ -60,7 +60,7 @@ REMs:  100 - Main Loop  170 - Scoring.  270 - Player done, back to PAL.  300 - P
 
 ### EXAMPLES OF ML INTEGRATION
 
-   DICE.BAS is an example program that illustrates the use of RIOT chip RAM to create TinyBASIC 'limited' one-dimensional arrays using TB's USR function.  TinyBASIC has (sort of) built in 'PEEK' and 'POKE' ML routines that are not BASIC keywords -- although, to use them, you just have to call them.  For translating small dice and card games from M$ BASIC, this is just what you need!  :^)  LIST the program for an amazingly simple method of making simple 1-D arrays that can hold numbers 0-255.  Enjoy!
+   DICE.BAS is an example program that illustrates the use of RIOT chip RAM to create TinyBASIC 'limited' one-dimensional arrays using TB's USR function.  TinyBASIC has (sort of) built in 'PEEK' and 'POKE' ML routines that are not BASIC keywords -- although, to use them, you just have to call them.  For translating small dice and card games from M$ BASIC, this is just what you need!  :^)  LIST the program for an amazingly simple method of making simple, small 1-D arrays that can hold numbers 0-255.  Enjoy!
    
    CHAR-SET.BAS takes advantage of the KIM-1 kernal ROM routines for printing characters to the TTY device to print out a table of the ASCII decimal codes for all of the "printing" chacters, 32-127.  The program "calls" the OUTCH, OUTSP, and CRLF routines.  Use of OUTCH is made to sort-of mimic MS Basic's ability to 'PRINT CHR$(x)'.  And yes, this would be *much* faster in ML, but sometimes you just want to print a character from a variable value in BASIC, even if it's 'tiny.'  :^)
 
