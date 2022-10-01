@@ -1,5 +1,7 @@
 NOTE: ---> If your version of Tiny Basic loads other than at $0200 (e.g. at $2000, or $2100, or elsewhere), you will need to change the variables for the 'PEEK' and 'POKE' locations in some of these programs. Tom Pitmann's original manual for the KIM-1 version of Tiny Basic says that the routines lie 20 and 24 bytes, respectively, after the beginning of the TB program. Eg., TB loads at $0200, routines are at 532 and 536 (decimal); or starts at $2100, 8468 and 8472. FWIW, I use Jim McClanahan's port of TB for the PAL-1 that loads to $0200, and a higher-loading KIM version ported by Nils Andretti that loads at $2000, but the main code starts at $2100.
 
+### BORG ATTACK - A "Star Trek"-like Tiny BASIC game for 5 KB PAL-1 and microKIM
+
 ### LIL' ZILCH for KIM/PAL-1 Tiny BASIC
 
 This is a dice game. You roll 5 dice and try to collect as many 1s and 5s as you can within a 3-roll turn. If at any time you cannot get a 1 or 5, you 'zilch' and lose any points gained in the turn. You have 10 turns to reach 2,000 points. This is based on the classic 6-dice game Zilch, aka Greedy, or even "Cosmic Wimpout". The turn limit is your "opponent," as I ran out of room to have the computer play against you.
