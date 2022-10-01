@@ -1,6 +1,6 @@
 NOTE: ---> If your version of Tiny Basic loads other than at $0200 (e.g. at $2000, or $2100, or elsewhere), you will need to change the variables for the 'PEEK' and 'POKE' locations in some of these programs. Tom Pitmann's original manual for the KIM-1 version of Tiny Basic says that the routines lie 20 and 24 bytes, respectively, after the beginning of the TB program. Eg., TB loads at $0200, routines are at 532 and 536 (decimal); or starts at $2100, 8468 and 8472. FWIW, I use Jim McClanahan's port of TB for the PAL-1 that loads to $0200, and a higher-loading KIM version ported by Nils Andretti that loads at $2000, but the main code starts at $2100.
 
-*** LIL' ZILCH for KIM/PAL-1 Tiny BASIC
+### LIL' ZILCH for KIM/PAL-1 Tiny BASIC
 
 This is a dice game. You roll 5 dice and try to collect as many 1s and 5s as you can within a 3-roll turn. If at any time you cannot get a 1 or 5, you 'zilch' and lose any points gained in the turn. You have 10 turns to reach 2,000 points. This is based on the classic 6-dice game Zilch, aka Greedy, or even "Cosmic Wimpout". The turn limit is your "opponent," as I ran out of room to have the computer play against you.
 
@@ -34,7 +34,7 @@ REMARKS:
 1111 - Check for all 5 played.
 1125 - Score it, or re-roll the rest?
 
-*** LIL' YAWT: an original adaptation for Tiny BASIC
+### LIL' YAWT: an original adaptation for Tiny BASIC
 
 I wanted to see if I could cram the popular 5-dice poker-like game into the 2.5K left over from loading Tiny BASIC into the unexpanded PAL-1 (will work with a 4K-expanded KIM-1, too). I couldn't fit in the "poker hands," but this version has the 1 through 6 categories, "Yawt," and a final slot for the sum of one "garbage hand" that won't score anything else.
 
@@ -44,18 +44,19 @@ VARIABLES: B - No. of dice to reroll; category to score at end of turn. C - Cate
 
 REMARKS: 42 - Init variables, category array. 65 - Start of Main Loop (ends 560). 300 - Roll all 5 dice. 400 - Put score into a category. 700 - Check for YAWT. 900 - Add up for Chance. 1000 - Print out each dice roll. 1300 - Print out scorecard. 1500 - Total up and end.
 
-*** BOXCARS AND SNAKE EYES: an original game in Tiny BASIC
+### BOXCARS AND SNAKE EYES: an original game in Tiny BASIC
 
 Well, mainly original. I took the idea from a high school math/programming class project. The kids created C++ code, while I decided to just follow the "outline" presented by the teacher and write this in Tiny BASIC for the KIM-1/PAL-1 (5K). The game is a dice game - you against the computer to 100 points. In seven-or-less rolls per turn, try to get as many points as possible without encountering "boxcars" (12) and losing your points for the turn, or "snake eyes" (2) and losing the game right then and there. To make it fit in 2.4 KB, I first cobbled the program together 'freely,' then cut and cut and cut ... just like Hammurabi, below. Here are some helps, in case someone wants to improve on it:
 
 VARIABLES: H=Human's score, total. I=delay loop var for computer turns. J=the roll counter per turn. O=player(1) or computer(2) currently playing. P=PAL-1's total score. S=Computer's playing 'style'. T=temp var. for total point w/i a turn. X,Y=dice. Z=misc. input var. REMs: 100 - Main Loop 170 - Scoring. 270 - Player done, back to PAL. 300 - PAL done, back to player. 400 - a winner! 500 - Boxcars 600 - Snake Eyes 700 - Instructions (mega-chopped!) 900 - delay loop for PAL rolls.
 
-*** EXAMPLES OF ML INTEGRATION
+### EXAMPLES OF ML INTEGRATION
 
 DICE.BAS is an example program that illustrates the use of RIOT chip RAM to create TinyBASIC 'limited' one-dimensional arrays using TB's USR function. TinyBASIC has (sort of) built in 'PEEK' and 'POKE' ML routines that are not BASIC keywords -- although, to use them, you just have to call them. For translating small dice and card games from M$ BASIC, this is just what you need! :^) LIST the program for an amazingly simple method of making simple, small 1-D arrays that can hold numbers 0-255. Enjoy!
 
 CHAR-SET.BAS takes advantage of the KIM-1 kernal ROM routines for printing characters to the TTY device to print out a table of the ASCII decimal codes for all of the "printing" chacters, 32-127. The program "calls" the OUTCH, OUTSP, and CRLF routines. Use of OUTCH is made to sort-of mimic MS Basic's ability to 'PRINT CHR$(x)'. And yes, this would be much faster in ML, but sometimes you just want to print a character from a variable value in BASIC, even if it's 'tiny.' :^)
-OTHER GAMES
+
+### OTHER GAMES FROM 101 BASIC GANES
 
 Acey-Ducey, Chuck-a-Luck, Craps, Hi-Lo, Lunar Lander, and Hurkle have been around forever, and are all-but obvious to play. The source code for each was snagged from Creative Computing's seminal '70s texts "BASIC Computer Games," and "More BASIC Computer Games," both edited by David Ahl. For Craps, it was a challenge (like Hammurabi) to squeeze the translation to TinyBASIC into 2.4 KB, but still fun. There were other games I wanted to translate, but four-deep nested loops were just too much for me! Still, if you don't have an add-on RAM board for your PAL-1 or microKIM, this will provide a little fun and food for thought, if nothing else, while you reacquaint yourself with 6502 machine code and assembly language. :^) Enjoy!
 
