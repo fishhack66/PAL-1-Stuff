@@ -81,8 +81,6 @@ I - 'For/Next' loop generic counter
 
 J - 'For/Next' loop generic counter
 
-L - No. of rolls within a turn
-
 Q - Holds return val. of USR/RND call
 
 R - Holds return val. of RND call
@@ -100,11 +98,11 @@ Y - Y position ENTERED of Fed. shuttlepod
 
 REMARKS
 
-1 REM by Dave Hassler
+by Dave Hassler
 
-1 REM Built Sept. 2022 for the PAL-1 computer
+Built Sept. 2022 for the PAL-1 computer
 
-1 REM Runs under Tiny BASIC loaded at $0200
+Runs under Tiny BASIC loaded at $0200
 
 2 REM Call PrintMsg hiding in RIOT RAM
 
@@ -112,7 +110,7 @@ REMARKS
 
 19 REM Place Borg Cube at edge of quadrant
 
-99 REM Move Borg Cube 0 or -1 (X,Y) on grid
+99 REM Move Borg Cube 0 or -1 (X and Y) on grid
 
 199 REM Pod jump routine
 
