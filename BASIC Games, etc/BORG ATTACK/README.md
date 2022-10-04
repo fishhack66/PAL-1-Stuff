@@ -23,7 +23,7 @@ But if you find it close to the planet ...
 
 GAME PLAY:
 
-The quaudrant is laid out on a 8x8 grid: 0-7, X-Y co-ordinates. The planet and its space station are at 0,0; the "outer edges" of the quadrant
+The quadrant is laid out on a 8x8 grid: 0-7, X-Y co-ordinates. The planet and its space station are at 0,0; the "outer edges" of the quadrant
 are 0,7 over to 7,7 then down to 7,0. The Borg Cube will first show up there somewhere, and then work its way down-and-to-the-left toward the planet.
 
 The 'jump drive' lets the player pop into and out of any co-ordinate on the grid. Sensors will tell you if an "anomaly" is nearby.
