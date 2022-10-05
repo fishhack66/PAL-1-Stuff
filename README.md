@@ -6,8 +6,7 @@ Code (mainly BASIC, but some ML) for the PAL-1, microKIM, and KIM-1 6502 compute
 a "Star Trek"-like game for the 5 KB "unexpanded" PAL-1/microKIM and Tiny BASIC. Game and instructions are in the BASIC folder.
 
 ### Assembly/Debugging Utilities
-for the PAL-1 in the Utilities folder: the Woz/Baum 6502 disassembler for KIM, a memory dumper with hex and ASCII output, plus a little
-register display program.  See the README.md there for details. 
+for the PAL-1 in the Utilities folder: the Woz/Baum 6502 disassembler for KIM, a memory dumper with hex and ASCII output, a memory fill program, a 'facelift' for Lew Edwards' MOVIT program, plus a little register display program.  See the README.md there for details. 
 
 ### Original Games
 Boxcars and Snake Eyes, Lil' Zilch, Lil' Yawt are in the BASIC folder. All will run under Tiny BASIC in 5 KB.
