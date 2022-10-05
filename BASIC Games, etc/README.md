@@ -58,7 +58,7 @@ DICE.BAS is an example program that illustrates the use of RIOT chip RAM to crea
 
 CHAR-SET.BAS takes advantage of the KIM-1 kernal ROM routines for printing characters to the TTY device to print out a table of the ASCII decimal codes for all of the "printing" chacters, 32-127. The program "calls" the OUTCH, OUTSP, and CRLF routines. Use of OUTCH is made to sort-of mimic MS Basic's ability to 'PRINT CHR$(x)'. And yes, this would be much faster in ML, but sometimes you just want to print a character from a variable value in BASIC, even if it's 'tiny.' :^)
 
-### OTHER GAMES FROM 101 BASIC GANES
+### OTHER GAMES FROM 101 BASIC GAMES
 
 Acey-Ducey, Chuck-a-Luck, Craps, Hi-Lo, Lunar Lander, and Hurkle have been around forever, and are all-but obvious to play. The source code for each was snagged from Creative Computing's seminal '70s texts "BASIC Computer Games," and "More BASIC Computer Games," both edited by David Ahl. For Craps, it was a challenge (like Hammurabi) to squeeze the translation to TinyBASIC into 2.4 KB, but still fun. There were other games I wanted to translate, but four-deep nested loops were just too much for me! Still, if you don't have an add-on RAM board for your PAL-1 or microKIM, this will provide a little fun and food for thought, if nothing else, while you reacquaint yourself with 6502 machine code and assembly language. :^) Enjoy!
 
