@@ -4,7 +4,7 @@
 Yes, it's their 1976 hit, ported and tweaked by me for the KIM-1/PAL-1.  Details are in the source code file (and full comments in the PDF here), but to use it, put your disassembly starting address in $44 and $45 (little endian).  It loads and runs at $0800.  To see the next batch of disassembly from where you left off, just run the program again without entering a new starting address for disassembly. My third project! 
 
 ### eWOZ-Lite
-All I did was strip out the Intel Hex loader - I don't need it, as I use the online assembler at masswerks.at, which outputs perfect Apple hex files.
+All I did was strip out the Intel Hex loader - I don't need it, as I use the online assembler at https://masswerks.at, which outputs perfect Apple hex files.
 And, by also moving the input buffer to the end of the program (instead of sitting at $0200), I gained over 700 bytes of contiguous RAM in the 'unexpanded' PAL-1. That's more than the size of each program in the First Book of KIM! Plus, it's super-handy.
 
 ### Lil' Mem Dump
