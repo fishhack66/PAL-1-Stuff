@@ -1,7 +1,11 @@
-# Five Tools for the Unexpanded PAL-1
+# Six Tools for the Unexpanded PAL-1
 
 ### 6502 Disassembler by Wozniak and Baum
-Yes, it their 1976 hit, ported and tweaked by me for the KIM-1/PAL-1.  Details are in the source code file (and full comments in the PDF here), but to use it, put your disassembly starting address in $44 and $45 (little endian).  It loads and runs at $0800.  To see the next batch of disassembly from where you left off, just run the program again without entering a new starting address for disassembly. My third project! 
+Yes, it's their 1976 hit, ported and tweaked by me for the KIM-1/PAL-1.  Details are in the source code file (and full comments in the PDF here), but to use it, put your disassembly starting address in $44 and $45 (little endian).  It loads and runs at $0800.  To see the next batch of disassembly from where you left off, just run the program again without entering a new starting address for disassembly. My third project! 
+
+### eWOZ-Lite
+All I did was strip out the Intel Hex loader - I don't need it, as I use the online assembler at masswerks.at, which outputs perfect Apple hex files.
+And, by also moving the input buffer to the end of the program (instead of sitting at $0200), I gained over 700 bytes of contiguous RAM in the 'unexpanded' PAL-1. That's more than the size of each program in the First Book of KIM! Plus, it's super-handy.
 
 ### Lil' Mem Dump
 This program is my second attempt at 6502 assembly language programming, and I'm pretty pleased with it.  Enter a starting address at $20 and $21 (little endian), then load and run LMD at $1000.  To see the next 256 bytes, simply run the program program again without entering a new starting address, ala Woz and Baum -- we stand on the shoulders of giants....
@@ -13,7 +17,7 @@ This is just the ubiquitous "fill a page of memory with zeroes" routine from 650
 Lew Edwards' classic from First Book of KIM, again with just a few additions. The opportunity to break out in case zero page locations did not get set, and some info, we also added.
 
 ### Register Print
-My first go at making something useful.  Not pretty, but it quite small and works.  Loads at $1000  :^)  
+My first go at making something useful in 6502 assembly language.  Not pretty, but it quite small and works.  Loads at $1000  :^)  
 
 ***
 Thoughts:
