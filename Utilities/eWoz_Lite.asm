@@ -242,7 +242,7 @@ PRBYTE:	PHA		; Save A for LSD.
 	JSR PRHEX	; Output hex digit.
 	PLA		; Restore A.
 PRHEX:	AND #$0F	; Mask LSD for hex print.
-	ORA #$00	; Add "0".
+	ORA #$30	; Add "0".
 	CMP #$3A	; Digit?
 	BCC ECHO	; Yes, output it.
 	ADC #$06	; Add offset for letter.
