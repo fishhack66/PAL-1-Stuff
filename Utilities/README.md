@@ -5,7 +5,7 @@ Yes, it's their 1976 hit, ported and tweaked by me for the KIM-1/PAL-1.  Details
 
 ### eWOZ-Lite
 All I did was strip out the Intel Hex loader - I don't need it, as I use the online assembler at https://masswerks.at, which outputs perfect Apple hex files.
-And, by also moving the input buffer to the end of the program (instead of sitting at $0200), I gained over 700 bytes of contiguous RAM in the 'unexpanded' PAL-1. That's more than the size of each program in the First Book of KIM! Plus, it's super-handy.
+And, by also moving the input buffer to the end of the program (instead of sitting at $0300), I gained over 700 bytes of contiguous RAM in the 'unexpanded' PAL-1. That's more than the size of each program in the First Book of KIM! Plus, it's super-handy.
 
 ### Lil' Mem Dump
 This program is my second attempt at 6502 assembly language programming, and I'm pretty pleased with it.  Enter a starting address at $20 and $21 (little endian), then load and run LMD at $1000.  To see the next 256 bytes, simply run the program program again without entering a new starting address, ala Woz and Baum -- we stand on the shoulders of giants....
@@ -22,6 +22,6 @@ My first go at making something useful in 6502 assembly language.  Not pretty, b
 ***
 Thoughts:
 
-These programs could (should?) be relocated for maximum utility by the unexpanded PAL-1 user.  The register printer could sit at $1380, the memory dump could go at $12A0, and the disassembler at $1150.  That leaves a full 2K for machine code on the PAL or microKIM ($0300-$1100).  To quote numerous people, "We sent men to the moon with a lot less than that!"
+These programs could (should?) be relocated for maximum utility by the unexpanded PAL-1 user.  The register printer could sit at $1380, the memory dump could go at $12A0, and the disassembler at $1150.  That leaves almost 3K for machine code on the PAL or microKIM ($0200-$1100).  To quote numerous people, "We sent men to the moon with a lot less than that!"  Mix-n-match, use what you need.
 
 That would even leave a little room to make a "menu" program and tie it all together to make a package out of it - a fair debugger/monitor, when combined with the KIM/PAL's native monitor for poking in values and executing programs.  Maybe that's my Project #4 ... unless you beat me to it!
