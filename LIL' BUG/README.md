@@ -1,7 +1,7 @@
 A collection of small programs appropriate for debugging code on an 'unexpanded' 5 KB PAL-1 or microKIM computer.
 
 Includes: eWozLite, 6502 Disassembler, Search, Copy, Fill, Memory Dump (with ASCII), and Register Printer, plus a menu/picker
-(see documentation for full details on use).
+(see documentation for full details on use).  The .WAV file is a Hypertape 3x recording of the same package as the .PTP file.
 
 NOTE: these modules/programs can be broken *easily* -- there are no checks for mistakes or errors.  Everything works and works well, but just in a certain way.  I took my user input method cue directly from Woz and Baum's disassembler: enter addresses, etc., *before* running the programs.  This helped keep the size down, which after functionality was my main concern. 
 
