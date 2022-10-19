@@ -30,7 +30,7 @@
                     ORA #$80     
             IEVEN     LSR A        
                       TAX    
-                  LDA $110E,X       
+                  LDA WRDSTART,X       
                     BCS RTMODE     
                       LSR A   
                       LSR A   
@@ -41,7 +41,7 @@
           ERR     LDY #$80          
                     LDA #$00     
             GETFMT     TAX         
-                  LDA $1152,X       
+                  LDA MITTE1,X       
                     STA $40     
                     AND #$03     
                     STA $41     
@@ -75,9 +75,9 @@
                     BCC PROPBL     
                       PLA    
                       TAY    
-                  LDA $116C,Y       
+                  LDA MITTE4,Y       
                     STA $42     
-                  LDA $11AC,Y       
+                  LDA MITTE5,Y       
                     STA $43     
           PRMN1     LDA #$00          
                     LDY #$05     
@@ -105,9 +105,9 @@
                     BNE PRADR2     
           PRADR3     ASL $40          
                     BCC PRADR4     
-                  LDA $115F,X       
+                  LDA MITTE2,X       
                   JSR KIMOUT       
-                  LDA $1165,X       
+                  LDA MITTE3,X       
                     BEQ PRADR4     
                   JSR KIMOUT       
             PRADR4     DEX         
@@ -146,6 +146,7 @@
                     BCC RTS1     
                       INY    
             RTS1     RTS         
+WRDSTART 
 .BYTE $40                         
 .BYTE $02                         
 .BYTE $45                         
@@ -214,6 +215,7 @@
 .BYTE $13                         
 .BYTE $78                         
 .BYTE $A9                         
+MITTE1  
 .BYTE $00                         
 .BYTE $21                         
 .BYTE $81                         
@@ -227,12 +229,14 @@
 .BYTE $86                         
 .BYTE $4A                         
 .BYTE $85                         
+MITTE2  
 .BYTE $9D                         
 .BYTE $2C                         
 .BYTE $29                         
 .BYTE $2C                         
 .BYTE $23                         
 .BYTE $28                         
+MITTE3  
 .BYTE $24                         
 .BYTE $59                         
 .BYTE $00                         
@@ -240,6 +244,7 @@
 .BYTE $24                         
 .BYTE $24                         
 .BYTE $00                         
+MITTE4  
 .BYTE $1C                         
 .BYTE $8A                         
 .BYTE $1C                         
@@ -304,6 +309,7 @@
 .BYTE $69                         
 .BYTE $23                         
 .BYTE $A0                         
+MITTE5  
 .BYTE $D8                         
 .BYTE $62                         
 .BYTE $5A                         
