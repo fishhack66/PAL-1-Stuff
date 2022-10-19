@@ -7,4 +7,4 @@ NOTE: these modules/programs can be broken *easily* -- there are no checks for m
 
 If loading individual modules, load the eWozLite PTP file (in Object folder) first, at $1220, then use that to bring in the other files (in Apple I hex format).  You should set the ASCII transfer for A1 Hex files to no less than 10 msec character delay and 200 msec line delay, just to give eWozLite time to process the stream.
 
-ROM version: see the folder LIL' ROM for versions ready for burning to an (E)EPROM, relocated to $A000 and tuned up by Netherpes.  WTG!
+ROM version: see the folder LIL' ROM for versions for burning to an (E)EPROM, relocated to $A000 and tuned up by Netzherpes.  WTG!
