@@ -7,7 +7,7 @@
         COUNT  = $46               
         TEMPA  = $47               
         TEMPY  = $48               
-        * = $1010                
+        * = $A510                
                           
           DSMBL     LDA #$13          
                     STA $46     
