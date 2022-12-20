@@ -1,6 +1,7 @@
 # PAL-1 Stuff
 
 Code (a mix of BASIC and ML) for the PAL-1, microKIM, and KIM-1 6502 computers.  
+A lot more stuff (games, utils, docs) is at my PAL-1 website: http://www.vanportmedia.com/PAL-1
 
 ### BORG ATTACK!
 a "Star Trek"-like game for the 5 KB "unexpanded" PAL-1/microKIM and Tiny BASIC. Game and instructions are in the BASIC folder.
